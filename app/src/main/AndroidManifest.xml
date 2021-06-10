@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nishitpanchal395.costme">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CostMe">
+        <activity android:name=".Other_customers"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+           ></activity>
+        <activity android:name=".zzzzzz" />
+        <activity android:name=".try_menu_addcustomers" />
+        <activity android:name=".try_mehu" />
+        <activity android:name=".MainActivity3" />
+        <activity
+            android:name=".TodaysTask"
+            android:theme="@style/Theme.CostMe" />
+        <activity
+            android:name=".ManageInventory"
+            android:theme="@style/Theme.CostMe" />
+        <activity
+            android:name=".ManageCustomers"
+            android:theme="@style/Theme.CostMe" />
+        <activity
+            android:name=".MainActivity2"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

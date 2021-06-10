@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/product_name_list_text_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="Product Name"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/list_text_stock_other"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="In Stock=444112" />
+
+            <TextView
+                android:id="@+id/list_text_price_other"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Price=101000" />
+
+            <TextView
+                android:id="@+id/list_text_last_price_other"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Last Price=0000000" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/list_stock_qty_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:hint="Qty"
+       />
+
+        <EditText
+            android:id="@+id/list_stock_discount_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="Discount"
+            android:text="0"
+            android:inputType="number" />
+
+
+        <CheckBox
+            android:id="@+id/list_get_checkbox_other"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

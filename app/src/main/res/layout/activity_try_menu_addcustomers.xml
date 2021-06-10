@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".try_menu_addcustomers">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.915"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_add_a_photo_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/download"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <EditText
+            android:id="@+id/Customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="12dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_shop_address"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Enter Customer Name"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/customer_number"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_shop_address"
+
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Enter Customer Number"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/customer_location"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_shop_address"
+            android:drawablePadding="12dp"
+
+            android:ems="10"
+            android:hint="Enter Customer Location"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/date_purchase"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_margin="12dp"
+                android:layout_weight="3"
+                android:background="@drawable/custom_input"
+
+                android:drawableStart="@drawable/custom_shop_address"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter Date"
+                android:inputType="date"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="16dp" />
+
+
+            <CheckBox
+                android:id="@+id/date_today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Today" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/other_customers"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="14dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:text="Pick Products" />
+
+
+
+            <EditText
+                android:id="@+id/Product_names"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_shop_address"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Other Products"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="16dp" />
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/white">
+
+            <!-- Table Heading -->
+
+            <TableRow android:background="@color/purple_200">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Quantity"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="Price"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+
+            </TableRow>
+
+        </TableLayout>
+        <ListView
+            android:id="@+id/list_addcustomers_other"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="150dp" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/Total_cost"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_shop_address"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Total Cost"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/Due_amount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_shop_address"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Due Amount"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/Paid_amount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_shop_address"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Paid Amount"
+            android:inputType="number"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/LAst_pay_date"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_shop_address"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Enter Last Pay Date"
+            android:inputType="date"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/save_customer"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/addproduct_buttons" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/cancelproduct_buttons" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

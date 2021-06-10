@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageCustomers">
+
+    <include
+        android:id="@+id/toolbar_manage_customers"
+        layout="@layout/toolbar_my_layout"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tablayout1_customers"
+        android:layout_height="wrap_content"
+        android:background="#494f56"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#ffe6e6"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="194dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:id="@+id/tab1_cus"
+            android:layout_height="wrap_content"
+            android:text="All Customers" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:id="@+id/tab2_cus"
+            android:layout_height="wrap_content"
+            android:text="Due Customers" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab3_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid Customers" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpage1_customers"/>
+
+
+</LinearLayout>
